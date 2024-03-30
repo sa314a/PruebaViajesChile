@@ -29,6 +29,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
     <!-- FONTAWESOME -->
     <script
       src="https://kit.fontawesome.com/3628d5fdde.js"
@@ -47,12 +51,145 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="container"></div>
+    <header class="header fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Viajes Chile</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Vuelos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Paquetes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hoteles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Autos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- MAIN -->
-    <main>
-      <div class="container"></div>
+    <main class="">
+      <div class="container px-4">
+        <!-- HERO SECTION -->
+        <section class="carousel-section">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide carousel-fade"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption">
+                  <h2>Explora San Pedro de Atacama</h2>
+                  <p>
+                    Sumérgete en el corazón del desierto más árido del mundo
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <h2>Aventura en Torres del Paine</h2>
+                  <p>
+                    Maravíllate con imponentes montañas, glaciares, lagos y ríos
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <h2>Misterios de Isla de Pascua</h2>
+                  <p>Déjate sorprender por las imponentes estatuas Moai</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- SERVICES SECTIONS -->
+        <div class="row services-section mt-3 mx-0">
+          <div class="col-12 d-flex align-items-center gap-3 border">
+            <i class="fa-solid fa-plane"></i>
+            <h2 class="m-0">Vuelos</h2>
+            <i class="fa-solid fa-chevron-right ms-auto"></i>
+          </div>
+          <div class="col-12 d-flex align-items-center gap-3 border">
+            <i class="fa-solid fa-suitcase-rolling"></i>
+            <h2 class="m-0">Paquetes</h2>
+            <i class="fa-solid fa-chevron-right ms-auto"></i>
+          </div>
+          <div class="col-12 d-flex align-items-center gap-3 border">
+            <i class="fa-solid fa-hotel"></i>
+            <h2 class="m-0">Hoteles</h2>
+            <i class="fa-solid fa-chevron-right ms-auto"></i>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- FOOTER -->
     <footer>
