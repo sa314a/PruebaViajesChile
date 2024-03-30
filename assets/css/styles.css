@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #6d0ff2;
+  --primary-light: #b99ad9;
+  --secondary-color: #705abf;
+  --secondary-light: #d6c9f2;
+  --accent-color: #f2b807;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
