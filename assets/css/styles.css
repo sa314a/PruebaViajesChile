@@ -1,9 +1,8 @@
 /* variables */
 :root {
-  --primary-color: #6d0ff2;
-  --primary-light: #b99ad9;
-  --secondary-color: rgb(112, 90, 191);
-  --secondary-light: #d6c9f2;
+  --primary-color: #0a0141;
+  --secondary-color: #6d0ff2;
+  --secondary-light: #b99ad9;
   --accent-color: #f2b807;
 }
 
@@ -11,6 +10,26 @@
 body {
   font-family: "Nunito", sans-serif;
   font-style: normal;
+}
+/* buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  opacity: 0.9;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  opacity: 1;
+}
+.btn-primary:active {
+  background-color: var(--secondary-color) !important;
+  transform: scale(0.99);
+}
+
+/* hr */
+hr {
+  border-color: var(--secondary-light);
+  border-width: 10px;
 }
 
 /* navbar */
@@ -20,7 +39,6 @@ body {
 }
 .navbar-brand {
   font-family: "Lilita One", sans-serif;
-
   font-style: normal;
   font-size: 1.5rem;
   letter-spacing: 0.25px;
@@ -80,4 +98,21 @@ body {
 /* services section */
 .services-section {
   height: calc(30vh - 16px);
+}
+
+.about-section h3 {
+  min-height: 67px;
+}
+
+@media screen and (min-width: 768px) {
+  .fa-solid,
+  .fa-brands {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-section h3 {
+    min-height: auto;
+  }
 }
