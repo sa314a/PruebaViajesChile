@@ -11,6 +11,13 @@ body {
   font-family: "Nunito", sans-serif;
   font-style: normal;
 }
+
+/* container */
+.container {
+  max-width: 1200px;
+
+  padding-inline: 32px;
+}
 /* buttons */
 .btn-primary {
   background-color: var(--primary-color);
@@ -24,6 +31,20 @@ body {
 .btn-primary:active {
   background-color: var(--secondary-color) !important;
   transform: scale(0.99);
+}
+
+/* text */
+.fs-caption {
+  font-size: 14px;
+}
+.fs-caption-sm {
+  font-size: 12px;
+}
+.text-purple {
+  color: var(--secondary-color);
+}
+.text-purple-light {
+  color: var(--secondary-light);
 }
 
 /* hr */
@@ -50,22 +71,22 @@ hr {
   letter-spacing: 0.5px;
 }
 
-/* carousel */
-.carousel-section {
+/* hero-section carousel */
+.hero-section .carousel-section {
   margin-top: 86px;
   height: calc(70vh - 94px);
 }
-.carousel,
-.carousel-inner {
+.hero-section .carousel,
+.hero-section .carousel-inner {
   height: 100%;
 }
-.carousel-item {
+.hero-section .carousel-item {
   height: 100%;
   background-size: cover;
   background-position: center;
 }
 
-.carousel-item:first-child {
+.hero-section .item-1 {
   background-image: linear-gradient(
       to bottom,
       rgba(189, 154, 217, 1),
@@ -75,7 +96,7 @@ hr {
     url("../img/carousel/san_pedro_de_atacama.jpg");
 }
 
-.carousel-item:nth-child(2) {
+.hero-section .item-2 {
   background-image: linear-gradient(
       to bottom,
       rgba(189, 154, 217, 1),
@@ -85,7 +106,7 @@ hr {
     url("../img/carousel/torres_del_paine.jpg");
 }
 
-.carousel-item:last-child {
+.hero-section .item-3 {
   background-image: linear-gradient(
       to bottom,
       rgba(189, 154, 217, 1),
@@ -100,14 +121,41 @@ hr {
   height: calc(30vh - 16px);
 }
 
+/* about section */
 .about-section h3 {
   min-height: 67px;
+}
+
+/* top offers section */
+
+.top-offers .carousel {
+  max-width: 350px;
+}
+.top-offers h3 {
+  width: 100%;
+  max-width: 350px;
+}
+
+.card-img-top {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.text-bg-purple {
+  background-color: var(--secondary-color);
 }
 
 @media screen and (min-width: 768px) {
   .fa-solid,
   .fa-brands {
     font-size: 24px;
+  }
+  .top-offers .card-title {
+    min-height: 64px;
+  }
+
+  .top-offers p.card-text:has(span) {
+    min-height: 49px;
   }
 }
 

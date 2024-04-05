@@ -54,7 +54,7 @@
     <header class="header fixed-top">
       <div class="container">
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-          <div class="container-fluid">
+          <div class="container p-0">
             <a class="navbar-brand" href="#">Viajes Chile</a>
             <button
               class="navbar-toggler"
@@ -72,7 +72,7 @@
                 class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center"
               >
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Vuelos</a>
+                  <a class="nav-link" href="#vuelos">Vuelos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Paquetes</a>
@@ -88,90 +88,93 @@
     </header>
     <!-- MAIN -->
     <main class="">
-      <div class="container px-4">
+      <div class="container">
         <!-- HERO SECTION -->
-        <section class="carousel-section">
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide carousel-fade"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-caption">
-                  <h2>Explora San Pedro de Atacama</h2>
-                  <p>
-                    Sumérgete en el corazón del desierto más árido del mundo
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption">
-                  <h2>Aventura en Torres del Paine</h2>
-                  <p>
-                    Maravíllate con imponentes montañas, glaciares, lagos y ríos
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption">
-                  <h2>Misterios de Isla de Pascua</h2>
-                  <p>Déjate sorprender por las imponentes estatuas Moai</p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
+        <section class="hero-section container px-0">
+          <div class="carousel-section">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide carousel-fade"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item item-1 active">
+                  <div class="carousel-caption">
+                    <h2>Explora San Pedro de Atacama</h2>
+                    <p>
+                      Sumérgete en el corazón del desierto más árido del mundo
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item item-2">
+                  <div class="carousel-caption">
+                    <h2>Aventura en Torres del Paine</h2>
+                    <p>
+                      Maravíllate con imponentes montañas, glaciares, lagos y
+                      ríos
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item item-3">
+                  <div class="carousel-caption">
+                    <h2>Misterios de Isla de Pascua</h2>
+                    <p>Déjate sorprender por las imponentes estatuas Moai</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </section>
-
         <!-- SERVICES SECTIONS -->
         <div class="row services-section mt-3 mx-0">
-          <div
-            class="col-12 col-md-4 d-flex align-items-center gap-3 border flex-md-column justify-content-center"
+          <a
+            href="#vuelos"
+            class="col-12 col-md-4 d-flex align-items-center gap-3 border flex-md-column justify-content-center text-decoration-none text-dark"
           >
             <i class="fa-solid fa-plane"></i>
             <h2 class="m-0">Vuelos</h2>
@@ -181,7 +184,7 @@
             >
               Ver Más
             </button>
-          </div>
+          </a>
           <div
             class="col-12 col-md-4 d-flex align-items-center gap-3 border flex-md-column justify-content-center"
           >
@@ -209,10 +212,10 @@
         </div>
 
         <!-- DIVISION -->
-        <hr class="my-5" />
+        <hr class="my-5 d-none d-md-block" />
 
         <!-- ABOUT SECTIONS -->
-        <div class="row d-none d-md-flex about-section">
+        <section class="row d-none d-md-flex about-section">
           <h2 class="text-center mb-5">Quiénes Somos</h2>
           <div class="col-4">
             <div
@@ -267,10 +270,629 @@
               para la aventura.
             </p>
           </div>
-        </div>
+        </section>
 
         <!-- DIVISION -->
-        <hr class="my-5" />
+        <hr class="my-5 d-none d-md-block" />
+
+        <!-- top offers sections -->
+        <section class="top-offers my-5">
+          <!-- title section -->
+          <header>
+            <h2 class="text-center">¡Atrapa estas Ofertas!</h2>
+            <p class="text-center">
+              ¿Alguna vez has soñado con escapar de la rutina diaria con un
+              clic? ¡Esta es tu señal divina! ¡Dale un vistazo a nuestras
+              ofertas y prepárate para empacar!
+            </p>
+          </header>
+
+          <div
+            class="top-offers-content d-md-flex justify-content-center gap-3"
+          >
+            <!-- section vuelos -->
+            <section class="d-flex flex-column align-items-center" id="vuelos">
+              <!-- carousel -->
+              <h3 class="text-center badge text-bg-warning fs-6 mt-5">
+                Vuelos
+              </h3>
+              <div
+                id="carouselExampleIndicators"
+                class="carousel carousel-dark slide shadow-sm mx-auto"
+              >
+                <!-- carousel indicators -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <!-- carousel content -->
+                <div class="carousel-inner">
+                  <!-- item -->
+                  <div class="carousel-item active">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/vuelos/arica.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >Economy</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">Arica</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary">Solo ida </span>
+                          desde 10/07/2024
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 29.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Incluye Tasas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/vuelos/la serena.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >Economy</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">La Serena</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary">Solo ida </span>
+                          desde 06/06/2024
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 19.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Incluye Tasas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/vuelos/puertomontt.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >Economy</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">Puerto Montt</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary">Solo ida </span>
+                          desde 06/06/2024
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 27.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Incluye Tasas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/vuelos/valdivia.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >Economy</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">Valdivia</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary">Solo ida </span>
+                          desde 15/08/2024
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 19.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Incluye Tasas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- section paquetes -->
+            <section class="d-flex flex-column align-items-center" id="vuelos">
+              <!-- carousel -->
+              <h3 class="text-center badge text-bg-warning fs-6 mt-5">
+                Paquetes
+              </h3>
+              <div
+                id="carouselExampleIndicators2"
+                class="carousel carousel-dark slide shadow-sm mx-auto"
+              >
+                <!-- carousel indicators -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <!-- carousel content -->
+                <div class="carousel-inner">
+                  <!-- item -->
+                  <div class="carousel-item active">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/carousel/isla_de_pascua.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >7 Días / 6 Noches</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">Isla de Pascua</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary"> Incluye </span>
+                          Vuelo + Hotel
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 659.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Incluye Tasas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/carousel/san_pedro_de_atacama.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >5 Días / 4 Noches</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">San Pedro de Atacama</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary"> Incluye </span>
+                          Vuelo + Hotel
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 219.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Incluye Tasas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/paquetes/puertovaras.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >5 Días / 4 Noches</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">Puerto Varas</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary"> Incluye </span>
+                          Vuelo + Hotel
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 159.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Incluye Tasas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/carousel/torres_del_paine.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >6 Días / 5 Noches</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">Torres del Paine</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary"> Incluye </span>
+                          Vuelo + Hotel
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 909.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Incluye Tasas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- section hoteles -->
+            <section class="d-flex flex-column align-items-center" id="vuelos">
+              <!-- carousel -->
+              <h3 class="text-center badge text-bg-warning fs-6 mt-5">
+                Hoteles
+              </h3>
+              <div
+                id="carouselExampleIndicators3"
+                class="carousel carousel-dark slide shadow-sm mx-auto"
+              >
+                <!-- carousel indicators -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <!-- carousel content -->
+                <div class="carousel-inner">
+                  <!-- item -->
+                  <div class="carousel-item active">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/hoteles/valparaiso.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >Por noche</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">WineBox Hotel</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary">Estadía en</span>
+                          Valparaíso
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 39.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Para 2 adultos
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card -->
+                  <div class="carousel-item">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/hoteles/puertonatales.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >Por noche</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">Hotel Llanuras de Diana</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary">Estadía en</span>
+                          Puerto Varas
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 49.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Para 2 adultos
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card -->
+                  <div class="carousel-item">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/hoteles/pucon.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >Por noche</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">Hotel Antumalal</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary">Estadía en</span>
+                          Pucón
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 79.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Para 2 adultos
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <!-- card -->
+                    <div class="card" style="max-width: 350px">
+                      <div class="card-img-wrapper position-relative">
+                        <img
+                          src="./assets/img/hoteles/puertovarashotel.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span
+                          class="badge text-bg-purple position-absolute top-0 end-0"
+                          >Por noche</span
+                        >
+                      </div>
+
+                      <div class="card-body">
+                        <h3 class="card-title mb-0">Hotel Cabaña del Lago</h3>
+                        <p class="card-text">
+                          <span class="fw-bold text-secondary">Estadía en</span>
+                          Puerto Varas
+                        </p>
+                      </div>
+
+                      <div class="card-body text-end">
+                        <p
+                          class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                        >
+                          desde
+                        </p>
+                        <p class="card-text fs-3 mb-0 fw-bold">CLP 89.990</p>
+                        <p
+                          class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                        >
+                          Para 2 adultos
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
       </div>
     </main>
     <!-- FOOTER -->
