@@ -53,9 +53,12 @@
     <!-- HEADER -->
     <header class="header fixed-top">
       <div class="container">
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
           <div class="container p-0">
+            <!-- navbar brand -->
             <a class="navbar-brand" href="#">Viajes Chile</a>
+            <!-- icon button -->
             <button
               class="navbar-toggler"
               type="button"
@@ -67,18 +70,34 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- navbar list -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul
                 class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center"
               >
                 <li class="nav-item">
-                  <a class="nav-link" href="#vuelos">Vuelos</a>
+                  <!-- link small viewport-->
+                  <a class="nav-link d-lg-none" href="#vuelos">Vuelos</a>
+                  <!-- link large viewport-->
+                  <a class="nav-link d-none d-lg-inline" href="#vuelosLg"
+                    >Vuelos</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Paquetes</a>
+                  <!-- link small viewport-->
+                  <a class="nav-link d-lg-none" href="#paquetes">Paquetes</a>
+                  <!-- link large viewport-->
+                  <a class="nav-link d-none d-lg-inline" href="#paquetesLg"
+                    >Paquetes</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Hoteles</a>
+                  <!-- link small viewport-->
+                  <a class="nav-link d-lg-none" href="#hoteles">Hoteles</a>
+                  <!-- link large viewport-->
+                  <a class="nav-link d-none d-lg-inline" href="#hotelesLg"
+                    >Hoteles</a
+                  >
                 </li>
               </ul>
             </div>
@@ -87,15 +106,17 @@
       </div>
     </header>
     <!-- MAIN -->
-    <main class="">
+    <main>
       <div class="container">
         <!-- HERO SECTION -->
         <section class="hero-section container px-0">
+          <!-- carousel -->
           <div class="carousel-section">
             <div
               id="carouselExampleCaptions"
               class="carousel slide carousel-fade"
             >
+              <!-- carousel-indicators -->
               <div class="carousel-indicators">
                 <button
                   type="button"
@@ -118,7 +139,9 @@
                   aria-label="Slide 3"
                 ></button>
               </div>
+              <!-- carousel content -->
               <div class="carousel-inner">
+                <!-- carousel item -->
                 <div class="carousel-item item-1 active">
                   <div class="carousel-caption">
                     <h2>Explora San Pedro de Atacama</h2>
@@ -127,6 +150,7 @@
                     </p>
                   </div>
                 </div>
+                <!-- carousel item -->
                 <div class="carousel-item item-2">
                   <div class="carousel-caption">
                     <h2>Aventura en Torres del Paine</h2>
@@ -136,6 +160,7 @@
                     </p>
                   </div>
                 </div>
+                <!-- carousel item -->
                 <div class="carousel-item item-3">
                   <div class="carousel-caption">
                     <h2>Misterios de Isla de Pascua</h2>
@@ -143,6 +168,7 @@
                   </div>
                 </div>
               </div>
+              <!-- button controls -->
               <button
                 class="carousel-control-prev"
                 type="button"
@@ -170,44 +196,107 @@
             </div>
           </div>
         </section>
+
         <!-- SERVICES SECTIONS -->
         <div class="row services-section mt-3 mx-0">
-          <a
-            href="#vuelos"
+          <!-- vuelos item -->
+          <div
             class="col-12 col-md-4 d-flex align-items-center gap-3 border flex-md-column justify-content-center text-decoration-none text-dark"
           >
+            <!-- icon -->
             <i class="fa-solid fa-plane"></i>
+            <!-- title -->
             <h2 class="m-0">Vuelos</h2>
-            <i class="fa-solid fa-chevron-right ms-auto d-md-none"></i>
-            <button
-              class="btn btn-primary d-none d-md-block w-100 text-uppercase"
+
+            <!-- link small viewport-->
+            <a
+              href="#vuelos"
+              class="ms-auto d-md-none text-decoration-none text-dark text-end flex-grow-1"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <!-- link medium viewport-->
+            <a
+              href="#vuelos"
+              class="btn btn-primary d-none d-md-block d-lg-none w-100 text-uppercase"
             >
               Ver Más
-            </button>
-          </a>
-          <div
-            class="col-12 col-md-4 d-flex align-items-center gap-3 border flex-md-column justify-content-center"
-          >
-            <i class="fa-solid fa-suitcase-rolling"></i>
-            <h2 class="m-0">Paquetes</h2>
-            <i class="fa-solid fa-chevron-right ms-auto d-md-none"></i>
-            <button
-              class="btn btn-primary d-none d-md-block w-100 text-uppercase"
+            </a>
+            <!-- link large viewport-->
+            <a
+              href="#vuelosLg"
+              class="btn btn-primary d-none d-lg-block w-100 text-uppercase"
             >
               Ver Más
-            </button>
+            </a>
           </div>
+          <!-- paquetes item -->
           <div
             class="col-12 col-md-4 d-flex align-items-center gap-3 border flex-md-column justify-content-center"
           >
-            <i class="fa-solid fa-hotel"></i>
-            <h2 class="m-0">Hoteles</h2>
-            <i class="fa-solid fa-chevron-right ms-auto d-md-none"></i>
-            <button
-              class="btn btn-primary d-none d-md-block w-100 text-uppercase"
+            <!-- icon -->
+            <i class="fa-solid fa-suitcase-rolling"></i>
+            <!-- title -->
+            <h2 class="m-0">Paquetes</h2>
+
+            <!-- link small viewport-->
+            <a
+              href="#paquetes"
+              class="ms-auto d-md-none text-decoration-none text-dark text-end flex-grow-1"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <!-- link medium viewport-->
+
+            <a
+              href="#paquetes"
+              class="btn btn-primary d-none d-md-block d-lg-none w-100 text-uppercase"
             >
               Ver Más
-            </button>
+            </a>
+
+            <!-- link large viewport-->
+            <a
+              href="#paquetesLg"
+              class="btn btn-primary d-none d-lg-block w-100 text-uppercase"
+            >
+              Ver Más
+            </a>
+          </div>
+          <!-- hoteles item -->
+          <div
+            class="col-12 col-md-4 d-flex align-items-center gap-3 border flex-md-column justify-content-center"
+          >
+            <!-- icon -->
+            <i class="fa-solid fa-hotel"></i>
+            <!-- title -->
+            <h2 class="m-0">Hoteles</h2>
+
+            <!-- link small viewport-->
+            <a
+              href="#hoteles"
+              class="ms-auto d-md-none text-decoration-none text-dark text-end flex-grow-1"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <!-- link medium viewport-->
+            <a
+              href="#hoteles"
+              class="btn btn-primary d-none d-md-block d-lg-none w-100 text-uppercase"
+            >
+              Ver Más
+            </a>
+
+            <!-- link large viewport-->
+            <a
+              href="#hotelesLg"
+              class="btn btn-primary d-none d-lg-block w-100 text-uppercase"
+            >
+              Ver Más
+            </a>
           </div>
         </div>
 
@@ -216,14 +305,19 @@
 
         <!-- ABOUT SECTIONS -->
         <section class="row d-none d-md-flex about-section">
+          <!-- title -->
           <h2 class="text-center mb-5">Quiénes Somos</h2>
+          <!-- col-1 -->
           <div class="col-4">
             <div
               class="d-flex flex-column align-items-center text-center gap-3"
             >
+              <!-- icon -->
               <i class="fa-solid fa-rocket text-center"></i>
+              <!-- subtitle section -->
               <h3>Exploradores de Sueños</h3>
             </div>
+            <!-- description -->
             <p>
               ¡Bienvenidos a nuestra agencia de viajes, el último bastión de
               esperanza para los intrépidos aventureros que buscan descifrar el
@@ -234,14 +328,17 @@
               sumergimos en la esencia.
             </p>
           </div>
+          <!-- col-2 -->
           <div class="col-4">
             <div
               class="d-flex flex-column align-items-center text-center gap-3"
             >
+              <!-- icon -->
               <i class="fa-brands fa-hive"></i>
+              <!-- subtitle section -->
               <h3>Arquitectos de Odiseas</h3>
             </div>
-
+            <!-- description -->
             <p>
               Nuestra empresa se basa en una premisa muy simple: viajar por
               Chile no debería ser solo una actividad, sino una odisea épica
@@ -252,14 +349,17 @@
               arte y felicidad duradera.
             </p>
           </div>
+          <!-- col-3 -->
           <div class="col-4">
             <div
               class="d-flex flex-column align-items-center text-center gap-3"
             >
+              <!-- icon -->
               <i class="fa-solid fa-burger"></i>
+              <!-- subtitle section -->
               <h3>Custodios del Sabor</h3>
             </div>
-
+            <!-- description -->
             <p>
               Finalmente, si buscas vivir experiencias que te dejen marcado de
               por vida (en el buen sentido), estás en el lugar correcto. Somos
@@ -277,9 +377,11 @@
 
         <!-- top offers sections -->
         <section class="top-offers my-5">
-          <!-- title section -->
+          <!-- header section -->
           <header>
+            <!-- title -->
             <h2 class="text-center">¡Atrapa estas Ofertas!</h2>
+            <!-- description -->
             <p class="text-center">
               ¿Alguna vez has soñado con escapar de la rutina diaria con un
               clic? ¡Esta es tu señal divina! ¡Dale un vistazo a nuestras
@@ -287,11 +389,15 @@
             </p>
           </header>
 
+          <!-- ofertas hasta viewport lg -->
           <div
             class="top-offers-content d-md-flex justify-content-center gap-3"
           >
             <!-- section vuelos -->
-            <section class="d-flex flex-column align-items-center" id="vuelos">
+            <section
+              class="d-flex d-lg-none flex-column align-items-center"
+              id="vuelos"
+            >
               <!-- carousel -->
               <h3 class="text-center badge text-bg-warning fs-6 mt-5">
                 Vuelos
@@ -335,18 +441,20 @@
                   <div class="carousel-item active">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/vuelos/arica.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="Vista panorámica de la costa árida de Arica con un edificio alto al pie de colinas desérticas, mirando hacia un mar azul claro bajo un cielo despejado"
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >Economy</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">Arica</h3>
                         <p class="card-text">
@@ -354,7 +462,7 @@
                           desde 10/07/2024
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -370,21 +478,25 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- item -->
                   <div class="carousel-item">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
-                          src="./assets/img/vuelos/la serena.jpg"
+                          src="./assets/img/vuelos/laserena.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="Faro pintoresco de color rojo con detalles blancos ubicado en la arena de una playa en La Serena, bajo un cielo azul con pocas nubes"
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >Economy</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">La Serena</h3>
                         <p class="card-text">
@@ -392,7 +504,7 @@
                           desde 06/06/2024
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -408,21 +520,24 @@
                       </div>
                     </div>
                   </div>
+                  <!-- item -->
                   <div class="carousel-item">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/vuelos/puertomontt.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="Vista urbana costera con edificios modernos en primer plano y una montaña nevada en el fondo, reflejando la fusión de la ciudad de  Puerto Montt con la naturaleza"
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >Economy</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">Puerto Montt</h3>
                         <p class="card-text">
@@ -430,7 +545,7 @@
                           desde 06/06/2024
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -446,21 +561,25 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- item -->
                   <div class="carousel-item">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/vuelos/valdivia.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="Tranquilo muelle fluvial con una variedad de barcos amarrados, con la ciudad extendiéndose a lo largo de la orilla del río y colinas al fondo en un día soleado en Valdivia"
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >Economy</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">Valdivia</h3>
                         <p class="card-text">
@@ -468,7 +587,7 @@
                           desde 15/08/2024
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -489,7 +608,10 @@
             </section>
 
             <!-- section paquetes -->
-            <section class="d-flex flex-column align-items-center" id="vuelos">
+            <section
+              class="d-flex d-lg-none flex-column align-items-center"
+              id="paquetes"
+            >
               <!-- carousel -->
               <h3 class="text-center badge text-bg-warning fs-6 mt-5">
                 Paquetes
@@ -533,18 +655,20 @@
                   <div class="carousel-item active">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/carousel/isla_de_pascua.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="Fila de misteriosas estatuas Moai de piedra mirando hacia el interior de la Isla de Pascua bajo un cielo azul con nubes dispersas"
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >7 Días / 6 Noches</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">Isla de Pascua</h3>
                         <p class="card-text">
@@ -552,7 +676,7 @@
                           Vuelo + Hotel
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -572,18 +696,20 @@
                   <div class="carousel-item">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/carousel/san_pedro_de_atacama.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="Reflejo simétrico de dos volcanes imponentes en el tranquilo espejo de agua del Salar de Atacama durante el atardecer"
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >5 Días / 4 Noches</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">San Pedro de Atacama</h3>
                         <p class="card-text">
@@ -591,7 +717,7 @@
                           Vuelo + Hotel
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -608,21 +734,24 @@
                     </div>
                   </div>
 
+                  <!-- item -->
                   <div class="carousel-item">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/paquetes/puertovaras.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="Caudaloso río de aguas turquesas fluyendo a través de un bosque verde, con el imponente Volcán Osorno cubierto de nieve en el fondo, bajo un cielo azul claro."
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >5 Días / 4 Noches</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">Puerto Varas</h3>
                         <p class="card-text">
@@ -630,7 +759,7 @@
                           Vuelo + Hotel
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -647,21 +776,24 @@
                     </div>
                   </div>
 
+                  <!-- item -->
                   <div class="carousel-item">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/carousel/torres_del_paine.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="vista panorámica del Parque Nacional Torres del Paine en Chile, mostrando montañas nevadas reflejadas en el lago con un cielo nublado y una vegetación verde en primer plano"
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >6 Días / 5 Noches</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">Torres del Paine</h3>
                         <p class="card-text">
@@ -669,7 +801,7 @@
                           Vuelo + Hotel
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -690,7 +822,10 @@
             </section>
 
             <!-- section hoteles -->
-            <section class="d-flex flex-column align-items-center" id="vuelos">
+            <section
+              class="d-flex d-lg-none flex-column align-items-center"
+              id="hoteles"
+            >
               <!-- carousel -->
               <h3 class="text-center badge text-bg-warning fs-6 mt-5">
                 Hoteles
@@ -734,18 +869,20 @@
                   <div class="carousel-item active">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/hoteles/valparaiso.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="WineBox Hotel. Creativa y colorida construcción de un hotel o edificio público hecho con contenedores de envío reciclados, adornado con un mural artístico, bajo un cielo azul claro"
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >Por noche</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">WineBox Hotel</h3>
                         <p class="card-text">
@@ -753,7 +890,7 @@
                           Valparaíso
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -770,22 +907,24 @@
                     </div>
                   </div>
 
-                  <!-- card -->
+                  <!-- item -->
                   <div class="carousel-item">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/hoteles/puertonatales.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="Hotel de estilo victoriano con techos verdes acentuados y paredes rojizas, situado en una colina que domina un paisaje natural con cielo crepuscular"
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >Por noche</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">Hotel Llanuras de Diana</h3>
                         <p class="card-text">
@@ -793,7 +932,7 @@
                           Puerto Varas
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -810,22 +949,24 @@
                     </div>
                   </div>
 
-                  <!-- card -->
+                  <!-- item -->
                   <div class="carousel-item">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/hoteles/pucon.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="Hotel Antumalal con amplios ventanales entre árboles, sobre la ribera de un lago tranquilo con montañas y un cielo tenue al amanecer o atardecer"
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >Por noche</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">Hotel Antumalal</h3>
                         <p class="card-text">
@@ -833,7 +974,7 @@
                           Pucón
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -850,21 +991,24 @@
                     </div>
                   </div>
 
+                  <!-- item -->
                   <div class="carousel-item">
                     <!-- card -->
                     <div class="card" style="max-width: 350px">
+                      <!-- card img -->
                       <div class="card-img-wrapper position-relative">
                         <img
                           src="./assets/img/hoteles/puertovarashotel.jpg"
                           class="card-img-top"
-                          alt="..."
+                          alt="Hotel Cabaña del Lago con edificaciones de varios niveles y tejados, rodeado de vegetación y con un lago o mar al frente en un día parcialmente nublado."
                         />
+                        <!-- card badge -->
                         <span
                           class="badge text-bg-purple position-absolute top-0 end-0"
                           >Por noche</span
                         >
                       </div>
-
+                      <!-- card destination -->
                       <div class="card-body">
                         <h3 class="card-title mb-0">Hotel Cabaña del Lago</h3>
                         <p class="card-text">
@@ -872,7 +1016,7 @@
                           Puerto Varas
                         </p>
                       </div>
-
+                      <!-- card price -->
                       <div class="card-body text-end">
                         <p
                           class="card-text mb-0 text-secondary fs-caption text-purple-light"
@@ -892,13 +1036,639 @@
               </div>
             </section>
           </div>
+
+          <!-- ofertas desde viewport lg -->
+          <div class="d-none d-lg-block">
+            <!-- vuelos -->
+            <section class="top-offers-lg" id="vuelosLg">
+              <h3 class="text-center badge text-bg-warning fs-6 mt-5">
+                Vuelos
+              </h3>
+              <div class="row">
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card">
+                    <!-- card img -->
+                    <div class="card-img-wrapper position-relative">
+                      <img
+                        src="./assets/img/vuelos/laserena.jpg"
+                        class="card-img-top"
+                        alt="Faro pintoresco de color rojo con detalles blancos ubicado en la arena de una playa en La Serena, bajo un cielo azul con pocas nubes"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >Economy</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">La Serena</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary">Solo ida </span>
+                        desde 06/06/2024
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 19.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Incluye Tasas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card">
+                    <div class="card-img-wrapper position-relative">
+                      <!-- card img -->
+                      <img
+                        src="./assets/img/vuelos/puertomontt.jpg"
+                        class="card-img-top"
+                        alt="Vista urbana costera con edificios modernos en primer plano y una montaña nevada en el fondo, reflejando la fusión de la ciudad de  Puerto Montt con la naturaleza"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >Economy</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">Puerto Montt</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary">Solo ida </span>
+                        desde 06/06/2024
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 27.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Incluye Tasas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card">
+                    <!-- card img -->
+                    <div class="card-img-wrapper position-relative">
+                      <img
+                        src="./assets/img/vuelos/valdivia.jpg"
+                        class="card-img-top"
+                        alt="Tranquilo muelle fluvial con una variedad de barcos amarrados, con la ciudad extendiéndose a lo largo de la orilla del río y colinas al fondo en un día soleado en Valdivia"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >Economy</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">Valdivia</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary">Solo ida </span>
+                        desde 15/08/2024
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 19.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Incluye Tasas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card">
+                    <div class="card-img-wrapper position-relative">
+                      <!-- card img -->
+                      <img
+                        src="./assets/img/vuelos/arica.jpg"
+                        class="card-img-top"
+                        alt="Vista panorámica de la costa árida de Arica con un edificio alto al pie de colinas desérticas, mirando hacia un mar azul claro bajo un cielo despejado"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >Economy</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">Arica</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary">Solo ida </span>
+                        desde 10/07/2024
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 29.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Incluye Tasas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- paquetes -->
+            <section class="top-offers-lg" id="paquetesLg">
+              <h3 class="text-center badge text-bg-warning fs-6 mt-5">
+                Paquetes
+              </h3>
+              <div class="row">
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card" style="max-width: 350px">
+                    <!-- card img -->
+                    <div class="card-img-wrapper position-relative">
+                      <img
+                        src="./assets/img/carousel/isla_de_pascua.jpg"
+                        class="card-img-top"
+                        alt="Fila de misteriosas estatuas Moai de piedra mirando hacia el interior de la Isla de Pascua bajo un cielo azul con nubes dispersas"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >7 Días / 6 Noches</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">Isla de Pascua</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary"> Incluye </span>
+                        Vuelo + Hotel
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 659.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Incluye Tasas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card" style="max-width: 350px">
+                    <div class="card-img-wrapper position-relative">
+                      <!-- card img -->
+                      <img
+                        src="./assets/img/carousel/san_pedro_de_atacama.jpg"
+                        class="card-img-top"
+                        alt="Reflejo simétrico de dos volcanes imponentes en el tranquilo espejo de agua del Salar de Atacama durante el atardecer"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >5 Días / 4 Noches</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">San Pedro de Atacama</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary"> Incluye </span>
+                        Vuelo + Hotel
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 219.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Incluye Tasas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card" style="max-width: 350px">
+                    <div class="card-img-wrapper position-relative">
+                      <!-- card img -->
+                      <img
+                        src="./assets/img/paquetes/puertovaras.jpg"
+                        class="card-img-top"
+                        alt="Caudaloso río de aguas turquesas fluyendo a través de un bosque verde, con el imponente Volcán Osorno cubierto de nieve en el fondo, bajo un cielo azul claro."
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >5 Días / 4 Noches</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">Puerto Varas</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary"> Incluye </span>
+                        Vuelo + Hotel
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 159.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Incluye Tasas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card">
+                    <div class="card-img-wrapper position-relative">
+                      <!-- card img -->
+                      <img
+                        src="./assets/img/carousel/torres_del_paine.jpg"
+                        class="card-img-top"
+                        alt="vista panorámica del Parque Nacional Torres del Paine en Chile, mostrando montañas nevadas reflejadas en el lago con un cielo nublado y una vegetación verde en primer plano"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >6 Días / 5 Noches</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">Torres del Paine</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary"> Incluye </span>
+                        Vuelo + Hotel
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 909.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Incluye Tasas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- hoteles -->
+            <section class="top-offers-lg" id="hotelesLg">
+              <h3 class="text-center badge text-bg-warning fs-6 mt-5">
+                Hoteles
+              </h3>
+              <div class="row">
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card" style="max-width: 350px">
+                    <!-- card img -->
+                    <div class="card-img-wrapper position-relative">
+                      <img
+                        src="./assets/img/hoteles/valparaiso.jpg"
+                        class="card-img-top"
+                        alt="WineBox Hotel. Creativa y colorida construcción de un hotel o edificio público hecho con contenedores de envío reciclados, adornado con un mural artístico, bajo un cielo azul claro"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >Por noche</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">WineBox Hotel</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary">Estadía en</span>
+                        Valparaíso
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 39.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Para 2 adultos
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card" style="max-width: 350px">
+                    <div class="card-img-wrapper position-relative">
+                      <!-- card img -->
+                      <img
+                        src="./assets/img/hoteles/puertonatales.jpg"
+                        class="card-img-top"
+                        alt="Hotel de estilo victoriano con techos verdes acentuados y paredes rojizas, situado en una colina que domina un paisaje natural con cielo crepuscular"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >Por noche</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">Hotel Llanuras de Diana</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary">Estadía en</span>
+                        Puerto Varas
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 49.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Para 2 adultos
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card" style="max-width: 350px">
+                    <div class="card-img-wrapper position-relative">
+                      <!-- card img -->
+                      <img
+                        src="./assets/img/hoteles/pucon.jpg"
+                        class="card-img-top"
+                        alt="Hotel Antumalal con amplios ventanales entre árboles, sobre la ribera de un lago tranquilo con montañas y un cielo tenue al amanecer o atardecer"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >Por noche</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">Hotel Antumalal</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary">Estadía en</span>
+                        Pucón
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 79.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Para 2 adultos
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <!-- card -->
+                  <div class="card" style="max-width: 350px">
+                    <div class="card-img-wrapper position-relative">
+                      <!-- card img -->
+                      <img
+                        src="./assets/img/hoteles/puertovarashotel.jpg"
+                        class="card-img-top"
+                        alt="Hotel Cabaña del Lago con edificaciones de varios niveles y tejados, rodeado de vegetación y con un lago o mar al frente en un día parcialmente nublado"
+                      />
+                      <!-- card badge -->
+                      <span
+                        class="badge text-bg-purple position-absolute top-0 end-0"
+                        >Por noche</span
+                      >
+                    </div>
+                    <!-- card destination -->
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">Hotel Cabaña del Lago</h3>
+                      <p class="card-text">
+                        <span class="fw-bold text-secondary">Estadía en</span>
+                        Puerto Varas
+                      </p>
+                    </div>
+                    <!-- card price -->
+                    <div class="card-body text-end">
+                      <p
+                        class="card-text mb-0 text-secondary fs-caption text-purple-light"
+                      >
+                        desde
+                      </p>
+                      <p class="card-text fs-3 mb-0 fw-bold">CLP 89.990</p>
+                      <p
+                        class="card-text mb-5 text-secondary fs-caption-sm text-purple-light"
+                      >
+                        Para 2 adultos
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- division -->
+        <hr />
+
+        <!-- contact section -->
+        <section class="mb-5">
+          <!-- title -->
+          <h2 class="text-center my-5">Contacto</h2>
+          <!-- form contact -->
+          <form class="form-contact needs-validation">
+            <!-- input name -->
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nameInput" required />
+            </div>
+            <!-- input asunto -->
+            <div class="mb-3">
+              <label for="asuntoInput" class="form-label">Asunto</label>
+              <input
+                type="text"
+                class="form-control"
+                id="asuntoInput"
+                required
+              />
+            </div>
+            <!-- input mensaje -->
+            <div class="mb-3">
+              <label for="inputMensaje" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="inputMensaje"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+            <!-- button submit -->
+            <div class="d-flex">
+              <button type="submit" class="btn btn-primary ms-auto">
+                Enviar
+              </button>
+            </div>
+          </form>
         </section>
       </div>
     </main>
+
     <!-- FOOTER -->
-    <footer>
-      <div class="container"></div>
+    <footer class="bg-black py-5">
+      <div class="container">
+        <!-- row -->
+        <div class="row text-center">
+          <!-- col-1 -->
+          <div class="col-12">
+            <!-- brand -->
+            <p class="navbar-brand text-white">Viajes Chile</p>
+          </div>
+          <!-- col-2 -->
+          <div class="col-12">
+            <!-- social media -->
+            <div class="d-flex justify-content-center gap-3">
+              <!-- icon -->
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white-50"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <!-- icon -->
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white-50"
+              >
+                <i class="fa-brands fa-facebook"></i
+              ></a>
+              <!-- icon -->
+              <a
+                href="https://twitter.com/?lang=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white-50"
+              >
+                <i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- modal email -->
+    <div class="modal" tabindex="-1" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- header -->
+          <div class="modal-header">
+            <h5 class="modal-title">Felicitaciones</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- body -->
+          <div class="modal-body">
+            <p>Formulario Enviado!!</p>
+          </div>
+          <!-- footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- BOOTSTRAP JS -->
     <script
@@ -906,5 +1676,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Script index.js -->
+
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
